@@ -1,0 +1,76 @@
+.gladskinVideo {
+	height: 75px;
+}
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #ffffff83;
+	min-width: 500px;
+	max-width: 500px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.465);
+	padding: 20px 16px;
+	z-index: 1;
+}
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+.flex-container {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+}
+@media (min-width: 1550px) {
+	.flex-container {
+		position: relative;
+		display: flex;
+		flex-direction: row;
+	}
+}
+body {
+	background-color: #07430045;
+}
+a {
+	color: #000000;
+	font: 1em verdana;
+}
+a:hover {
+	color: rgb(105, 255, 128);
+}
+
+a:active {
+	color: rgb(0, 0, 0);
+}
+p {
+	font: 15px verdana;
+}
+ul {
+	font: 15px verdana;
+}
+h1 {
+	font: 40px verdana;
+}
+h2 {
+	font: 30px verdana;
+}
+h3 {
+	font: 20px verdana;
+}
+h4 {
+	font: 20px verdana;
+}
+span {
+	color: #000000;
+	font: 1em verdana;
+}
+img {
+	max-width: 500%;
+	min-width: 50%;
+	height: auto;
+}
+iframe {
+	min-height: 400%;
+}

@@ -1,0 +1,25 @@
+button{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: chartreuse;
+    border: none;
+    padding: 25px;
+    border-radius: 15px;
+    font-size: larger;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+img{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
+body{
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}

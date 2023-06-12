@@ -1,0 +1,20 @@
+[
+    {
+        "school": "Saint Mary's College of California",
+        "program": "TEB (Technology, Engineering and Business) Certification",
+        "type": "Certificate",
+        "year": 2020
+    },
+    {
+        "school": "Saint Mary's College of California",
+        "program": "Business Administration/Data Analytics",
+        "type": "BS",
+        "year": 2021
+    },
+    {
+        "school": "Boston University",
+        "program": "Software Development",
+        "type": "MS",
+        "year": 2024
+    }
+]

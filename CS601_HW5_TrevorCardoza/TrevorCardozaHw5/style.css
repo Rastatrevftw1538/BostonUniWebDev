@@ -1,0 +1,37 @@
+#resultContainer {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+#resultContainer h2 {
+    color: #333;
+    font-size: 18px;
+}
+
+#resultContainer .degree {
+    margin-bottom: 10px;
+}
+
+#resultContainer .degree .school {
+    font-weight: bold;
+}
+#resultContainer .degree .program {
+    color: #666;
+}
+#resultContainer .degree .type {
+    color: #999;
+}
+
+#resultContainer .degree .year {
+    color: #666;
+}
+
+#errorContainer {
+    margin-top: 20px;
+    color: #ff0000;
+}
+
+#errorContainer .errorMessage {
+    font-weight: bold;
+}

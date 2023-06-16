@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Vue.js image hover app</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/style.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            <div v-for="image in images" :key="image.id">
+                <p>{{ titles[image.id - 1] }}</p>
+                <img
+                :src="image.isCurrent ? image.current : image.earlier"
+                @mouseover="toggleImage(image)"
+                @mouseout="toggleImage(image)"
+            >
+            </div>
+        </div>
+        <script>
+            new Vue({
+                el: '#app',
+                data: {
+                images: [
+                    { id: 1, current: 'path_to_current_image1', earlier: 'path_to_earlier_image1', isCurrent: true },
+                    { id: 2, current: 'path_to_current_image2', earlier: 'path_to_earlier_image2', isCurrent: true },
+                    { id: 3, current: 'Images/halo-2-anniversary.jpg', earlier: 'Images/valorant.jpg', isCurrent: true },
+                    { id: 4, current: 'path_to_current_image4', earlier: 'path_to_earlier_image4', isCurrent: true }
+                ],
+                titles: [
+                    'Me',
+                    'My Dog',
+                    'Favorite Games',
+                    'Title 4'
+                ]
+                },
+                methods: {
+                toggleImage(image) {
+                    image.isCurrent = !image.isCurrent;
+                }
+                }
+            });
+        </script>
+    </body>
+</html>
